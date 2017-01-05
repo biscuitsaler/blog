@@ -32,4 +32,16 @@ class User {
     public static function crypterPwd($value){
         return md5($value);
     }
+    public static function identifier($email, $pwd){
+        global $cnx;
+        $val = array(':email'=>$email, ':pwd'=>$pwd);
+        $req = "SELECT idUser, COUNT(idUser) as nb FROM user WHERE email = :email AND pwd = :pwd";
+        $res = $cnx->prepare($req);
+        $res->execute($val);
+        $row = $res->fetch(PDO::FETCH_OBJ);
+        if($row->nb == 0){
+            return false;
+        }
+        return $row->idUser;
+    }
 ?>
