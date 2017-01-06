@@ -20,7 +20,7 @@ spl_autoload_register('Autoload::classesAutoloader');
 <label> Email :</label>
 <input type="email" name="stu_email" id="email" required="required" placeholder="john123@gmail.com"/><br/><br />
 <label>password :</label>
-<input type="text" name="stu_city" id="city" required="required" placeholder="Please Enter Your City"/><br/><br />
+<input type="text" name="stu_city" id="city" required="required" placeholder="Please Enter Your password"/><br/><br />
 <input type="submit" value=" Submit " name="submit"/><br />
 </form>
 </div>
