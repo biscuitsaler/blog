@@ -16,7 +16,7 @@ spl_autoload_register('Autoload::classesAutoloader');
 <hr/>
 <form action="" method="post">
 <label>Pseudo :</label>
-<input type="text" name="stu_name" id="name" required="required" placeholder="Please Enter Name"/><br /><br />
+<input type="text" name="stu_name" id="name" required="required" placeholder="Please Enter Your Name"/><br /><br />
 <label> Email :</label>
 <input type="email" name="stu_email" id="email" required="required" placeholder="john123@gmail.com"/><br/><br />
 <label>password :</label>
